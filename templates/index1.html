@@ -1,1 +1,166 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>JARVIS AI Assistant</title>
 
+<!-- Main CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head><body><!-- Background -->
+<div class="background"></div>
+
+<!-- Main Application -->
+<div class="app-container">
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo">
+            <div class="logo-circle">
+                <span>J</span>
+            </div>
+
+            <div>
+                <h1>JARVIS</h1>
+                <p>Personal AI Assistant</p>
+            </div>
+        </div>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            SYSTEM ONLINE
+        </div>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+
+        <!-- Left Panel -->
+        <section class="info-panel">
+
+            <div class="info-card">
+                <span class="card-title">SYSTEM STATUS</span>
+
+                <div class="system-item">
+                    <span>AI ENGINE</span>
+                    <span class="online">ONLINE</span>
+                </div>
+
+                <div class="system-item">
+                    <span>VOICE SYSTEM</span>
+                    <span class="online">READY</span>
+                </div>
+
+                <div class="system-item">
+                    <span>MEMORY</span>
+                    <span class="online">ACTIVE</span>
+                </div>
+            </div>
+
+
+            <div class="info-card">
+                <span class="card-title">QUICK COMMANDS</span>
+
+                <button class="command-btn">Open Applications</button>
+                <button class="command-btn">Search Web</button>
+                <button class="command-btn">Tell Me The Time</button>
+                <button class="command-btn">System Information</button>
+            </div>
+
+        </section>
+
+
+        <!-- Jarvis Center -->
+        <section class="jarvis-center">
+
+            <div class="jarvis-title">
+                <h2>GOOD MORNING</h2>
+                <p>I am Jarvis. How can I assist you?</p>
+            </div>
+
+
+            <!-- Jarvis Animation -->
+            <div class="jarvis-core">
+
+                <div class="ring ring-1"></div>
+                <div class="ring ring-2"></div>
+                <div class="ring ring-3"></div>
+
+                <div class="core">
+                    <span>J</span>
+                </div>
+
+            </div>
+
+
+            <!-- Voice Button -->
+            <button id="voiceButton" class="voice-button">
+                <span class="mic-icon">🎤</span>
+                <span>CLICK TO SPEAK</span>
+            </button>
+
+        </section>
+
+
+        <!-- Chat Panel -->
+        <section class="chat-panel">
+
+            <div class="chat-header">
+                <h3>CONVERSATION</h3>
+                <span>LIVE</span>
+            </div>
+
+
+            <!-- Messages -->
+            <div id="chatMessages" class="chat-messages">
+
+                <div class="message jarvis-message">
+                    <strong>JARVIS</strong>
+                    <p>Hello. All systems are operational.</p>
+                </div>
+
+            </div>
+
+
+            <!-- Chat Input -->
+            <div class="chat-input">
+
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Type your command..."
+                >
+
+                <button id="sendButton">
+                    SEND
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <span>JARVIS AI SYSTEM v1.0</span>
+        <span id="clock">00:00:00</span>
+    </footer>
+
+</div>
+
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
